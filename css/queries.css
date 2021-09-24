@@ -1,0 +1,38 @@
+/* ********************* 
+BELOW 1100px 
+ ********************* */
+@media (max-width: 68.75rem) {
+  .map {
+    width: 80rem;
+    height: 80rem;
+  }
+  .slider__btn--left {
+    left: -8%;
+  }
+
+  .slider__btn--right {
+    right: -8%;
+  }
+}
+/* ********************* 
+BELOW 960px 
+ ********************* */
+@media (max-width: 60rem) {
+  .map {
+    width: 100vw;
+    height: 100vh;
+  }
+  .gallery {
+    width: 100vw;
+  }
+  .slider__btn--left {
+    left: 5%;
+  }
+
+  .slider__btn--right {
+    right: 5%;
+  }
+  .slider__btn {
+    opacity: 50%;
+  }
+}

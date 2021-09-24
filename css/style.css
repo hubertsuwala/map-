@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  background-color: #2d3439;
+}
+/* //////////////////////////////////////////////////////
+header
+////////////////////////////////////////////////////// */
+
+.logo {
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  height: 6rem;
+  width: 6rem;
+  background-color: #2d3439;
+  z-index: 999;
+}
+
+/* //////////////////////////////////////////////////////
+main
+////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////
+map and gallery container
+////////////////////////////////////////////////////// */
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* //////////////////////////////////////////////////////
+map
+////////////////////////////////////////////////////// */
+.map {
+  position: absolute;
+  height: 90rem;
+  width: 90rem;
+  opacity: 100%;
+  z-index: 10;
+}
+/* /////////////////////////////////////////////////////
+gallery
+////////////////////////////////////////////////////// */
+.gallery {
+  position: absolute;
+  width: 80rem;
+  height: 80rem;
+  opacity: 0%;
+  display: flex;
+  justify-content: center;
+}
+.slide {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.img {
+  width: 100%;
+  position: absolute;
+}
+.picture {
+  position: absolute;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  color: #333;
+  border-radius: 50%;
+  height: 5.5rem;
+  width: 5.5rem;
+  font-size: 3.25rem;
+  cursor: pointer;
+}
+
+.slider__btn--left {
+  left: -15%;
+}
+
+.slider__btn--right {
+  right: -15%;
+}
+/* //////////////////////////////////////////////////////
+leaflet popup
+////////////////////////////////////////////////////// */
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+  background-color: #2d3439;
+  border-radius: 5px;
+  border-left: 5px solid rgb(255, 104, 49);
+}
+.leaflet-popup .leaflet-popup-tip {
+  background-color: #2d3439;
+}
+
+.leaflet-popup-content {
+  font-size: 2rem;
+  font-family: inherit;
+}
+.button {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+}
+.button:hover,
+.button:active {
+  background-color: rgb(255, 104, 49);
+}
